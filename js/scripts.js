@@ -1,18 +1,3 @@
-// var _____WB$wombat$assign$function_____ = function (name) {
-//   return (
-//     (self._wb_wombat &&
-//       self._wb_wombat.local_init &&
-//       self._wb_wombat.local_init(name)) ||
-//     self[name]
-//   );
-// };
-// if (!self.__WB_pmw) {
-//   self.__WB_pmw = function (obj) {
-//     this.__WB_source = obj;
-//     return this;
-//   };
-// }
-
 window.addEventListener("load", function () {
   //Add class to body if IE10 or IE11
   if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
@@ -69,22 +54,19 @@ window.addEventListener("load", function () {
       e.preventDefault();
     });
   }
-  // Clicking about link scrolls to about
+
   navLinks[0].addEventListener("click", function (e) {
     aboutSection.scrollIntoView({ behavior: "smooth" });
     e.preventDefault();
   });
-  // Clicking performance link scrolls to portfolio
   navLinks[1].addEventListener("click", function (e) {
     portfolioSection.scrollIntoView({ behavior: "smooth" });
     e.preventDefault();
   });
-  // Clicking brands link scrolls to brands
   navLinks[2].addEventListener("click", function (e) {
     reachSection.scrollIntoView({ behavior: "smooth" });
     e.preventDefault();
   });
-  // Clicking careers link scrolls to careers
   navLinks[3].addEventListener("click", function (e) {
     careersSection.scrollIntoView({ behavior: "smooth" });
     e.preventDefault();
