@@ -2302,3 +2302,45 @@ a:focus {
     padding: 1rem;
   }
 }
+
+@media (max-width: 568px) {
+	.banner {
+		padding: 2rem 10% 0 10%;
+	}
+
+	.banner__heading {
+		font-size: 1rem;
+	}
+
+	.banner__btn {
+		font-size: .7rem;
+		margin-top: 1rem;
+		padding: .5rem 1rem;
+	}
+
+	h2,
+	.write-for-us .fsBody .fsForm .fsSectionHeading {
+		font-size: 1rem;
+		margin-bottom: .5rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+		margin-top: 0;
+		margin-bottom: .5rem;
+	}
+
+	h3 {
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	.formula__tip {
+		margin-bottom: 1rem;
+	}
+
+	.formula__fyi {
+		font-size: .5rem;
+		margin-top: 1rem;
+	}
+}
