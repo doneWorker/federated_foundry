@@ -923,11 +923,10 @@ a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0;
 }
-
 .performance__million--plus {
   font-weight: 600;
   font-size: 1em;
@@ -994,6 +993,9 @@ a:focus {
   }
 
   .performance__odometer {
+    font-size: 2.75rem;
+  }
+  .performance__million {
     font-size: 2.75rem;
   }
 
@@ -1392,8 +1394,17 @@ a:focus {
   background: #2354a0;
 }
 
+@media (max-width: 576px) {
+  .team__members {
+    flex-wrap: wrap;
+  }
+  .team__member {
+    width: calc(50% - 2rem);
+  }
+}
 /* .team p:not(.team__leader-name):not(.team__group-name):not(.team__leader-title),
 
+@media (max-width: 576px) {
 .team__subheading {
   color: #d0e5f0;
 }
