@@ -1269,6 +1269,11 @@ section > div > h2 {
     text-align: left;
     transform: translate(-50%, -50%);
 }
+.formula__flywheel-objectives h3 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #231f20;
+}
 .formula__fyi {
     margin-top: 5rem;
 }
@@ -1301,9 +1306,7 @@ section > div > h2 {
     }
 }
 @media (min-width: 576px) {
-    .formula__heading br {
-        display: inline;
-    }
+    .formula__heading br,
     .formula__heading-span {
         display: inline;
     }
@@ -1327,7 +1330,7 @@ section > div > h2 {
 }
 @media (min-width: 1600px) {
     .formula__heading {
-        margin-bottom: 1.25rem;
+        margin-bottom: 2rem;
     }
     .formula__subheading {
         margin-bottom: 2rem;
