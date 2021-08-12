@@ -42,6 +42,7 @@ window.addEventListener('load', function () {
 
     // Smooth scroll nav links
     const navLinks = document.querySelectorAll('.nav__link')
+    const footerNavLinks = document.querySelectorAll('.footer .nav__link')
     const bannerBtn = document.querySelector('.banner__btn')
     const aboutSection = document.querySelector('#about')
     const portfolioSection = document.querySelector('#portfolio')
@@ -54,7 +55,6 @@ window.addEventListener('load', function () {
             e.preventDefault()
         })
     }
-
     navLinks[0].addEventListener('click', function (e) {
         aboutSection.scrollIntoView({ behavior: 'smooth' })
         e.preventDefault()
@@ -68,6 +68,23 @@ window.addEventListener('load', function () {
         e.preventDefault()
     })
     navLinks[3].addEventListener('click', function (e) {
+        formulaSection.scrollIntoView({ behavior: 'smooth' })
+        e.preventDefault()
+    })
+
+    footerNavLinks[0].addEventListener('click', function (e) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' })
+        e.preventDefault()
+    })
+    footerNavLinks[1].addEventListener('click', function (e) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth' })
+        e.preventDefault()
+    })
+    footerNavLinks[2].addEventListener('click', function (e) {
+        reachSection.scrollIntoView({ behavior: 'smooth' })
+        e.preventDefault()
+    })
+    footerNavLinks[3].addEventListener('click', function (e) {
         formulaSection.scrollIntoView({ behavior: 'smooth' })
         e.preventDefault()
     })
@@ -181,6 +198,6 @@ window.addEventListener('load', function () {
     }
 
     // Footer year
-    var d = new Date()
-    document.querySelector('.footer__year').innerHTML = d.getFullYear()
+    // var d = new Date()
+    // document.querySelector('.footer__year').innerHTML = d.getFullYear()
 })
