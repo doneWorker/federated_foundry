@@ -388,9 +388,9 @@ a:focus {
     }
 
     .nav__link {
-        margin-left: 1.75rem;
+        margin-left: 1.2rem;
         color: #a2a4a7;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem .5rem;
     }
 
     .nav__link:first-child {
@@ -401,6 +401,10 @@ a:focus {
     .nav__link {
         font-size: 1.25rem;
     }
+	.footer-email {
+		color: #2354A0;
+		font-size: 1.25rem;
+	}
     .nav__link:hover,
     .nav__link--active {
         color: #167fba;
@@ -1894,7 +1898,11 @@ section:nth-child(odd) {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 2rem 5%;
+	justify-content: space-between;
+    padding: 0 5%;
+	height: 70px;
+	width: 100%;
+	align-items: center;
     border-top: 1px solid #e6e6e6;
     text-align: center;
 }
@@ -1903,17 +1911,27 @@ section:nth-child(odd) {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+	width: 154px;
+	height: 38px;
 }
 
 .footer__logo {
-    margin-right: 1rem;
-    max-height: 1.7rem;
+    /* margin-right: 1rem;
+    max-height: 1.7rem; */
+	width: 100%;
+	height: 100%;
+}
+
+.footer-email {
+	color: #2354A0;
+    font-size: 1.1rem;
 }
 
 .footer__system1 {
@@ -1976,7 +1994,7 @@ section:nth-child(odd) {
 .footer__social-icon:hover {
     opacity: 0.75;
 }
-@supports ((display: -ms-grid) or (display: grid)) {
+/* @supports ((display: -ms-grid) or (display: grid)) {
     .footer {
         display: -ms-grid !important;
         display: grid !important;
@@ -1999,14 +2017,14 @@ section:nth-child(odd) {
     .footer__social {
         grid-area: social;
     }
-}
+} */
 @media (min-width: 992px) {
     .footer {
         -webkit-align-items: center;
         -ms-flex-align: center;
         -ms-grid-row-align: center;
         align-items: center;
-        padding: 2rem 0;
+        /* padding: 2rem 0; */
         width: 90%;
         margin: 0 auto;
     }
@@ -2021,7 +2039,7 @@ section:nth-child(odd) {
         margin-bottom: 0;
         margin-left: auto;
     }
-    @supports ((display: -ms-grid) or (display: grid)) {
+    /* @supports ((display: -ms-grid) or (display: grid)) {
         .footer {
             -ms-grid-columns: 1fr (max-content) [3];
             grid-template-columns: 1fr repeat(3, max-content);
@@ -2032,7 +2050,7 @@ section:nth-child(odd) {
         .footer__social-link:nth-child(2) .footer__social-icon {
             margin-right: 0;
         }
-    }
+    } */
 }
 @media (min-width: 1200px) {
     .footer__logo {
