@@ -530,7 +530,7 @@ section:nth-child(odd) {
     padding: 2rem 5% 0 5%;
     text-align: center;
     background: linear-gradient(#0e98c9, #167fba);
-    background: url(../images/banner-v2.jpeg) no-repeat 100% 100%;
+    background: url(../images/banner-v2.png) no-repeat 100% 100%;
     background-size: cover;
     margin-bottom: -2px;
 }
@@ -2266,43 +2266,85 @@ section:nth-child(odd) {
 }
 
 @media (max-width: 568px) {
-	.banner {
-		padding: 2rem 10% 0 10%;
-	}
+    .banner {
+        padding: 2rem 10% 0 10%;
+    }
 
-	.banner__heading {
-		font-size: 1rem;
-	}
+    .banner__heading {
+        font-size: 1rem;
+    }
 
-	.banner__btn {
-		font-size: .7rem;
-		margin-top: 1rem;
-		padding: .5rem 1rem;
-	}
+    .banner__btn {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+    }
 
-	h2,
-	.write-for-us .fsBody .fsForm .fsSectionHeading {
-		font-size: 1rem;
-		margin-bottom: .5rem;
-	}
+    h2,
+    .write-for-us .fsBody .fsForm .fsSectionHeading {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
 
-	p {
-		font-size: 0.8rem;
-		margin-top: 0;
-		margin-bottom: .5rem;
-	}
+    p {
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
 
-	h3 {
-		font-size: 3vw;
-		text-align: center;
-	}
+    h3 {
+        font-size: 3vw;
+        text-align: center;
+    }
 
-	.formula__tip {
-		margin-bottom: 1rem;
-	}
+    .formula__tip {
+        margin-bottom: 1rem;
+    }
 
-	.formula__fyi {
-		font-size: .5rem;
-		margin-top: 1rem;
-	}
+    .formula__fyi {
+        font-size: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 568px) {
+    .banner {
+        padding: 2rem 10% 0 10%;
+    }
+
+    .banner__heading {
+        font-size: 1rem;
+    }
+
+    .banner__btn {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    h2,
+    .write-for-us .fsBody .fsForm .fsSectionHeading {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .formula__tip {
+        margin-bottom: 1rem;
+    }
+
+    .formula__fyi {
+        font-size: 0.5rem;
+        margin-top: 1rem;
+    }
 }
