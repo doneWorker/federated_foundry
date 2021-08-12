@@ -390,7 +390,7 @@ a:focus {
     .nav__link {
         margin-left: 1.2rem;
         color: #a2a4a7;
-        padding: 0.25rem .5rem;
+        padding: 0.25rem 0.5rem;
     }
 
     .nav__link:first-child {
@@ -401,10 +401,10 @@ a:focus {
     .nav__link {
         font-size: 1.25rem;
     }
-	.footer-email {
-		color: #2354A0;
-		font-size: 1.25rem;
-	}
+    .footer-email {
+        color: #2354a0;
+        font-size: 1.25rem;
+    }
     .nav__link:hover,
     .nav__link--active {
         color: #167fba;
@@ -505,19 +505,20 @@ a:focus {
 }
 
 /* --- Sections --- */
-section {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-}
 section:not(:first-child) {
     background: white !important;
 }
 section:nth-child(odd) {
     background-color: #f7f7fb !important;
 }
+section > div > h2 {
+    color: #231f20;
+}
+
 @media (min-width: 992px) {
-    .section {
-        padding: 4vw 0;
+    section {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
     }
 }
 
@@ -1200,16 +1201,12 @@ section:nth-child(odd) {
     margin-bottom: 0;
 }
 /* formula wheel */
-.formula {
-    background: white;
-}
 .formula__flywheel {
     display: flex;
     height: auto;
 }
-.formula__flywheel img {
-}
 .formula__flywheel-col {
+    position: relative;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -1276,14 +1273,18 @@ section:nth-child(odd) {
 .formula__fyi {
     margin-top: 5rem;
 }
-.formula__flywheel-objectives ol {
-    margin: 0;
+.formula__mid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #231f20;
 }
-.formula__flywheel-objectives h4 {
-    margin-bottom: 0;
+.formula__mid--left {
+    left: 0;
 }
-.formula__flywheel-objectives h3 {
-    margin: 0;
+.formula__mid--right {
+    right: 0;
 }
 @media (max-width: 576px) {
     .formula__tip h3 {
@@ -1898,11 +1899,11 @@ section:nth-child(odd) {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
     padding: 0 5%;
-	height: 70px;
-	width: 100%;
-	align-items: center;
+    height: 70px;
+    width: 100%;
+    align-items: center;
     border-top: 1px solid #e6e6e6;
     text-align: center;
 }
@@ -1918,19 +1919,19 @@ section:nth-child(odd) {
     -ms-flex-pack: center;
     justify-content: center;
 
-	width: 154px;
-	height: 38px;
+    width: 154px;
+    height: 38px;
 }
 
 .footer__logo {
     /* margin-right: 1rem;
     max-height: 1.7rem; */
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-email {
-	color: #2354A0;
+    color: #2354a0;
     font-size: 1.1rem;
 }
 
