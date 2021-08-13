@@ -49,6 +49,13 @@ window.addEventListener('load', function () {
     const reachSection = document.querySelector('#reach')
     const formulaSection = document.querySelector('#formula')
     const contactSection = document.querySelector('#contact')
+    const contactButton = document.querySelector('.banner__btn')
+
+    contactButton.addEventListener('click', function (e) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
+        e.preventDefault()
+    })
+
     // Clicking banner button scrolls to careers
     if (bannerBtn !== null) {
         bannerBtn.addEventListener('click', function (e) {

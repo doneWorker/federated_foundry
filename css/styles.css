@@ -563,7 +563,8 @@ h2 .subheading {
 }
 
 .banner__btn {
-    display: none;
+    background: white;
+    color: #231f20;
     margin-top: 1.5rem;
 }
 
@@ -626,7 +627,7 @@ h2 .subheading {
     }
 
     .banner__btn {
-        margin-top: 4.9375rem;
+        margin-top: 3rem;
     }
 }
 @media (min-width: 2000px) {
