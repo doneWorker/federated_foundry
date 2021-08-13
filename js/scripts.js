@@ -48,6 +48,7 @@ window.addEventListener('load', function () {
     const portfolioSection = document.querySelector('#portfolio')
     const reachSection = document.querySelector('#reach')
     const formulaSection = document.querySelector('#formula')
+    const contactSection = document.querySelector('#contact')
     // Clicking banner button scrolls to careers
     if (bannerBtn !== null) {
         bannerBtn.addEventListener('click', function (e) {
@@ -72,20 +73,8 @@ window.addEventListener('load', function () {
         e.preventDefault()
     })
 
-    footerNavLinks[0].addEventListener('click', function (e) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' })
-        e.preventDefault()
-    })
-    footerNavLinks[1].addEventListener('click', function (e) {
-        portfolioSection.scrollIntoView({ behavior: 'smooth' })
-        e.preventDefault()
-    })
-    footerNavLinks[2].addEventListener('click', function (e) {
-        reachSection.scrollIntoView({ behavior: 'smooth' })
-        e.preventDefault()
-    })
-    footerNavLinks[3].addEventListener('click', function (e) {
-        formulaSection.scrollIntoView({ behavior: 'smooth' })
+    navLinks[4].addEventListener('click', function (e) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
         e.preventDefault()
     })
 
