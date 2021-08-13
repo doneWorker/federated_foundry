@@ -1206,8 +1206,9 @@ h2 .subheading {
 .formula {
     position: relative;
     padding: 2rem 0;
-    background: url(../images/section-bg.png) 50% 50% no-repeat;
-    background-size: cover;
+    /* background: url(../images/section-bg.png) 50% 50% no-repeat;
+    background-size: cover; */
+    background: white;
 }
 .formula__container {
     position: relative;
