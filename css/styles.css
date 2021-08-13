@@ -2112,8 +2112,9 @@ h2 .subheading {
 }
 
 /* CONTACT */
-.contact {
-    padding: 2rem 5%;
+section.contact {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
     background: #231f20;
 }
 .contact h1 {
@@ -2149,13 +2150,14 @@ h2 .subheading {
     background: #2d6ecf;
 }
 .contact__form-info {
+    position: absolute;
     display: block;
     flex-shrink: 0;
     flex-grow: 1;
     flex-basis: 100%;
     font-size: 1rem;
     margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     text-align: left;
     color: #696871;
 }
