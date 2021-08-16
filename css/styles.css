@@ -586,7 +586,9 @@ h2 .subheading {
         justify-content: center;
     }
     .banner__heading {
-        text-align: left;
+      font-size: 8vw;
+      line-height: 1.2;
+      text-align: left;
     }
 }
 @media (min-width: 768px) {
@@ -799,7 +801,7 @@ h2 .subheading {
 .portfolio__item img {
     object-fit: contain;
 }
-@media (max-width: 568px) {
+@media (max-width: 568px) {}
     .portfolio__item {
         height: auto;
         flex-direction: column;
@@ -807,6 +809,9 @@ h2 .subheading {
     }
     .portfolio__item p {
         text-align: center;
+    }
+    .portfolio__item--logo {
+        margin-bottom: 2vh;
     }
     .portfolio__item img {
         width: 50vw;

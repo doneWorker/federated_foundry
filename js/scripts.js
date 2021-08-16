@@ -13,10 +13,17 @@ window.addEventListener('load', function () {
         // Show nav function
         function showNav() {
             const nav = document.querySelector('.nav')
+            const navItems = nav.querySelectorAll('.nav__link')
             const navToggle = document.querySelector('.nav-toggle')
             navToggle.addEventListener('click', function () {
                 this.classList.toggle('nav-toggle--active')
                 nav.classList.toggle('nav--visible')
+            })
+            navItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    navToggle.classList.toggle('nav-toggle--active')
+                    nav.classList.toggle('nav--visible')
+                })
             })
         }
         showNav()
