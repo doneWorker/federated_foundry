@@ -1487,6 +1487,10 @@ h2 .subheading {
     .formula__flywheel-col:nth-child(2) {
         width: 50%;
     }
+    .formula__tip p {
+      line-height: 1.5;
+      font-size: 1.2rem;
+    }
 }
 @media (max-width: 1150px) {
     .formula__flywheel-objectives h3 {
