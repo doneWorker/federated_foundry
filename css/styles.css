@@ -379,7 +379,7 @@ a:not(.nav__link):focus {
     padding: 0.25rem 1rem;
 }
 @media (min-width: 768px) {
-    .nav {
+  .nav:not(.nav--bottom) {
         position: static;
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
@@ -634,6 +634,7 @@ h2 .subheading {
 @media (min-width: 1200px) {
     .banner {
         padding-top: 2rem;
+        background-position: center right !important;
     }
 
     .banner__btn {
@@ -866,6 +867,7 @@ h2 .subheading {
         height: 200px;
         justify-content: space-around;
         align-items: center;
+        flex-direction: row;
     }
     .portfolio__item img {
         width: calc(100% - 3rem);
@@ -880,6 +882,7 @@ h2 .subheading {
     .portfolio__items p {
         width: 75%;
         padding-left: 3rem;
+        text-align: left;
     }
 }
 @media (min-width: 1600px) {
