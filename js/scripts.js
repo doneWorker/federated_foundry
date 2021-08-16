@@ -59,7 +59,7 @@ window.addEventListener('load', function () {
     // Clicking banner button scrolls to careers
     if (bannerBtn !== null) {
         bannerBtn.addEventListener('click', function (e) {
-            careersSection.scrollIntoView({ behavior: 'smooth' })
+            contactSection.scrollIntoView({ behavior: 'smooth' })
             e.preventDefault()
         })
     }
@@ -142,7 +142,7 @@ window.addEventListener('load', function () {
     const sections = document.querySelectorAll('.home-section')
     const sectionsArr = Array.from(sections)
 
-    const navItems = document.querySelectorAll('.nav .nav__link')
+    const navItems = document.querySelectorAll('.top-nav .nav__link')
     function activateNavByIndex(index) {
         if (sections[index].classList.contains('nav__link--active')) return
 
@@ -165,7 +165,7 @@ window.addEventListener('load', function () {
             }
         },
         {
-            rootMargin: '75px 0px 0px 0px',
+            rootMargin: '105px 0px 0px 0px',
         }
     )
 
@@ -194,6 +194,74 @@ window.addEventListener('load', function () {
     }
 
     // Footer year
-    // var d = new Date()
-    // document.querySelector('.footer__year').innerHTML = d.getFullYear()
+    var d = new Date()
+    document.querySelector('.footer__year').innerHTML = d.getFullYear()
+
+    // Particles.js
+    particlesJS('bottom_holder', {
+        particles: {
+            number: {
+                value: 50,
+                density: {
+                    enable: true,
+                    value_area: 800,
+                },
+            },
+            color: {
+                value: '#ffffff',
+            },
+            shape: {
+                type: 'circle',
+                stroke: {
+                    width: 0,
+                    color: '#000000',
+                },
+                polygon: {
+                    nb_sides: 5,
+                },
+            },
+            opacity: {
+                value: 0.5,
+                random: false,
+                anim: {
+                    enable: false,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false,
+                },
+            },
+            size: {
+                value: 3,
+                random: true,
+                anim: {
+                    enable: false,
+                    speed: 40,
+                    size_min: 0.1,
+                    sync: false,
+                },
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: '#ffffff',
+                opacity: 0.4,
+                width: 1,
+            },
+            move: {
+                enable: true,
+                speed: 1,
+                direction: 'none',
+                random: false,
+                straight: false,
+                out_mode: 'out',
+                bounce: false,
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                },
+            },
+        },
+        retina_detect: true,
+    })
 })
