@@ -195,7 +195,9 @@ window.addEventListener('load', function () {
 
     // Footer year
     var d = new Date()
-    document.querySelector('.footer__year').innerHTML = d.getFullYear()
+    document.querySelectorAll('.footer__year').forEach(function (y) {
+        y.innerHTML = d.getFullYear()
+    })
 
     // Particles.js
     particlesJS('bottom_holder', {
