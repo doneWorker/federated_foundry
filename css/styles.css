@@ -2158,6 +2158,7 @@ h2 .subheading {
 .footer__copyright a {
   padding: 0 .5em;
   font-size: .7em;
+  text-decoration: underline;
   color: white;
 }
 
