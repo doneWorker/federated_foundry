@@ -2211,17 +2211,19 @@ h2 .subheading {
         margin: 0 auto;
     }
     .footer .nav {
-        margin-left: 7rem;
+        /* margin-left: 7rem; */
         flex-wrap: wrap;
     }
     .footer .nav__link {
-        font-size: 1em;
+        font-size: 1.5em;
         width: 25%;
     }
     .footer__logos {
         -webkit-justify-content: start;
         -ms-flex-pack: start;
         justify-content: start;
+        position: absolute;
+        left: 0;
     }
 
     .footer__copyright {
@@ -2232,6 +2234,7 @@ h2 .subheading {
 @media (min-width: 1200px) {
     .footer__container {
         width: 1200px;
+        justify-content: center;
     }
     .footer__logo {
         max-height: 2.5rem;
@@ -2385,8 +2388,15 @@ section.contact {
         display: none;
     }
     .contact h1 {
+        text-align: center;
         font-size: 6vw;
         margin-bottom: .5rem;
+    }
+    .contact__form {
+      text-align: center;
+    }
+    .footer .nav {
+      flex-wrap: nowrap;
     }
     section.contact {
       padding-bottom: 1rem !important;
@@ -2449,6 +2459,6 @@ body.privacy-page .header {
 }
 @media (max-width: 568px) {
   .privacy-content {
-    margin-top: 5vh;
+    margin-top: 15vh;
   }
 }
