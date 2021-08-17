@@ -562,6 +562,7 @@ h2 .subheading {
 }
 
 .banner__btn {
+    display: none;
     background: white;
     color: #231f20;
     margin-top: 1.5rem;
@@ -1405,15 +1406,19 @@ h2 .subheading {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 100%;
+    padding: .5rem;
     font-size: 2rem;
     font-weight: 500;
     color: #231f20;
 }
 .formula__mid--left {
     left: 0;
+    text-align: right;
 }
 .formula__mid--right {
     right: 0;
+    text-align: left;
 }
 .formula__flywheel--m {
     display: none !important;
@@ -1428,10 +1433,6 @@ h2 .subheading {
     }
     .formula__tip {
         width: 50%;
-    }
-    .formula__tip h3,
-    .formula__tip p {
-        text-align: left !important;
     }
     .formula__tip h3 {
         font-size: 5.5vw;
@@ -1450,6 +1451,22 @@ h2 .subheading {
     }
     .formula__fyi {
         margin-top: 5vh;
+    }
+    .formula__flywheel-text--left,
+    .formula__flywheel-text--right {
+      margin: 1vh 0;
+      font-size: 5vw;
+      color: black;
+    }
+    .formula__tip--optimize h3,
+    .formula__tip--optimize p,
+    .formula__tip--scale h3,
+    .formula__tip--scale p {
+      text-align: left !important;
+    }
+    .formula__tip--aquire h3,
+    .formula__tip--aquire p {
+      text-align: right !important;
     }
 }
 @media (min-width: 576px) {
@@ -2134,6 +2151,12 @@ h2 .subheading {
     margin: 2rem 0;
     color: white;
 }
+.footer__copyright--m a,
+.footer__copyright a {
+  padding: 0 .5em;
+  font-size: .7em;
+  color: white;
+}
 
 .footer__link:first-child:after {
     content: '\2022';
@@ -2248,6 +2271,13 @@ section.contact {
     margin: auto;
     display: flex;
 }
+.contact__form a {
+  text-decoration: underline;
+  color: white;
+}
+.contact__form a:hover {
+  opacity: .5;
+}
 .contact__form-input,
 .contact__form-submit {
     font-size: 1.5rem;
@@ -2332,6 +2362,15 @@ section.contact {
         align-items: center;
         justify-content: space-between;
     }
+    .contact__form a {
+      font-size: 2rem !important;
+    }
+    .contact__container {
+      justify-content: center !important;
+    }
+    .contact__container a {
+      margin-left: 1em;
+    }
 }
 @media (max-width: 568px) {
     .contact__container,
@@ -2342,7 +2381,11 @@ section.contact {
         display: none;
     }
     .contact h1 {
-        font-size: 7vw;
+        font-size: 6vw;
+        margin-bottom: .5rem;
+    }
+    section.contact {
+      padding-bottom: 1rem !important;
     }
     .contact__form-input,
     .contact__form-submit {
@@ -2382,4 +2425,26 @@ section.contact {
         font-size: 4vw;
         margin-bottom: 1vh;
     }
+}
+
+
+
+/* PRIVACY PAGE */
+body.privacy-page {
+  background: url(../images/section-bg.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+body.privacy-page .header {
+  padding-left: 10%;
+}
+.privacy-content {
+  width: 80%;
+  margin: 150px auto;
+  color: black;
+}
+@media (max-width: 568px) {
+  .privacy-content {
+    margin-top: 5vh;
+  }
 }
