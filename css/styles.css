@@ -1515,6 +1515,9 @@ h2 .subheading {
     }
 }
 @media (min-width: 1600px) {
+    .formula__flywheel-objectives h3 {
+      text-align: center;
+    }
     .formula__heading {
         margin-bottom: 2rem;
     }
